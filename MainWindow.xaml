@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:checkList"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="180">
     <Grid>
-        
+        <Canvas>
+            <Button x:Name="walmartButton" Canvas.Left="10" Canvas.Top="150" Width="140" Click="walmartButton_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Walmart"/>
+                    <Image Source="walmartlog.png" Width="20" Height="20" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="chedrauiButton" Canvas.Left="10" Canvas.Top="190" Width="140" Click="chedrauiButton_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Chedraui"/>
+                    <Image Source="chedrauilog.png" Width="20" Height="20"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="sorianaButton" Canvas.Left="10" Canvas.Top="230" Width="140"  Click="sorianaButton_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Soriana"/>
+                    <Image Source="sorianalog.png" Width="20" Height="20"/>
+                </StackPanel>
+            </Button>
+            <Label Content="Nombre:" Canvas.Left="10" Canvas.Top="66"/>
+            <Label Content="CheckList" Canvas.Top="10" Canvas.Left="51"/>
+            <TextBox x:Name="nombreBox" Width="141" Canvas.Left="10" Canvas.Top="97"/>
+        </Canvas>
+
     </Grid>
 </Window>

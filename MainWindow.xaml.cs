@@ -20,9 +20,35 @@ namespace checkList
     /// </summary>
     public partial class MainWindow : Window
     {
+        public auxWindow vtn1;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void walmartButton_Click(object sender, RoutedEventArgs e)
+        {
+            vtn1 = new auxWindow();
+            vtn1.frame1.NavigationService.Navigate(new walmartPagexaml());
+            vtn1.Show();
+            Close();
+
+        }
+
+        private void chedrauiButton_Click(object sender, RoutedEventArgs e)
+        {
+            vtn1 = new auxWindow();
+            vtn1.frame1.NavigationService.Navigate(new chedrauiPage());
+            vtn1.Show();
+            Close();
+        }
+
+        private void sorianaButton_Click(object sender, RoutedEventArgs e)
+        {
+            vtn1 = new auxWindow();
+            vtn1.frame1.NavigationService.Navigate(new sorianaPage());
+            vtn1.Show();
+            Close();
         }
     }
 }
