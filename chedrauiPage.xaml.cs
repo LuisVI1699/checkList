@@ -23,24 +23,29 @@ namespace checkList
         Carrito A = new Carrito();
         ComboBox Box;
         double precio, total;
-        String aux, aux1;
-        MainWindow B = new MainWindow();
+        List<Listacarrito> listali = new List<Listacarrito>();
+        public class Listacarrito
+        {
+            public string Unidades { get; set; }
+            public string Productos { get; set; }
+            public string Precio { get; set; }
+        }
         public chedrauiPage()
         {
             InitializeComponent();
             Generar();
-            tbbienvenida.Text = "Hola " + B.nombre + "selecciona tus productos";
+            tbbienvenida.Text = "Hola " + A.nom + "selecciona tus productos";
         }
        
         public void Generar()
         {
-            lblista.Items.Add("  Unidades                                  Producto                                      Total  ");
+            listali.Add(new Listacarrito() { Unidades = "Unidades", Productos = "Producto", Precio = "Total" });
             Box = new ComboBox();
             for (int i = 0; i < 20; i++)
             {
                 Box.Items.Add(A.Products[i]);
             }
-            Box.Margin = new Thickness(73, 82, 0, 0);
+            Box.Margin = new Thickness(30, 83, 0, 0);
             Box.HorizontalAlignment = HorizontalAlignment.Left;
             Box.VerticalAlignment = VerticalAlignment.Top;
             Box.Width = 200;
@@ -55,7 +60,9 @@ namespace checkList
 
         private void bttotal_Click(object sender, RoutedEventArgs e)
         {
-            lblista.Items.Add("El total de su lista es: " + total);
+            listali.Add(new Listacarrito() { Unidades = "------------------------------------------------------------", Productos = "----------------------------------------------------", Precio = "------------------------------------------------" });
+            listali.Add(new Listacarrito() { Unidades = "El precio total de sus prod", Productos = "uctos es: ----------------------------------------", Precio = " " + Convert.ToString(total) + "$" });
+            lblista.Items.Refresh();
         }
 
         public void Checked(object sender, SelectionChangedEventArgs e)
@@ -66,23 +73,22 @@ namespace checkList
 
         private void btagregar_Click(object sender, RoutedEventArgs e)
         {
-            try { 
-            aux1 = tbproduct.Text;
-
-            for (int i = 0; i < (50 - aux1.Length); i++)
+            try
             {
-                aux += " ";
-            }
-            precio = A.priceC[Convert.ToInt32(Box.SelectedIndex)];
-            lblista.Items.Add("        " + tbunidades.Text + "                                         " + tbproduct.Text + aux + precio * double.Parse(tbunidades.Text));
-            total += precio * double.Parse(tbunidades.Text);
-            
+                precio = A.priceC[Convert.ToInt32(Box.SelectedIndex)];
+
+                listali.Add(new Listacarrito() { Unidades = tbunidades.Text, Productos = tbproduct.Text, Precio = Convert.ToString(precio * double.Parse(tbunidades.Text)) });
+
+                lblista.ItemsSource = listali;
+                lblista.Items.Refresh();
+
+                total += precio * double.Parse(tbunidades.Text);
+
             }
             catch
             {
                 MessageBox.Show("Ingresa una cantidad del producto");
             }
-            aux = "";
         }
     }
 }

@@ -21,6 +21,7 @@ namespace checkList
     public partial class MainWindow : Window
     {
         public auxWindow vtn1;
+        Carrito M = new Carrito();
         public MainWindow()
         {
             InitializeComponent();
@@ -33,11 +34,12 @@ namespace checkList
         }
         private void walmartButton_Click(object sender, RoutedEventArgs e)
         {
+            M.obtener(nombreBox.Text);
             vtn1 = new auxWindow();
             vtn1.frame1.NavigationService.Navigate(new walmartPagexaml());
             vtn1.Show();
             Close();
-
+            
         }
 
         private void chedrauiButton_Click(object sender, RoutedEventArgs e)

@@ -8,10 +8,28 @@
       Title="sorianaPage" Height="443.478" Width="894.099">
 
     <Grid x:Name="grid1">
-        <ListBox x:Name="lblista" HorizontalAlignment="Left" Height="394" Margin="464,34,0,0" VerticalAlignment="Top" Width="400"/>
+        <ListBox x:Name="lblista" HorizontalAlignment="Stretch" Height="394" Margin="464,34,0,0" VerticalAlignment="Top" Width="400">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="130"></ColumnDefinition>
+                            <ColumnDefinition Width="200"></ColumnDefinition>
+                            <ColumnDefinition Width="50"></ColumnDefinition>
+
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="{Binding Unidades}"></TextBlock>
+                        <TextBlock Grid.Column="1" Text="{Binding Productos}"></TextBlock>
+                        <TextBlock Grid.Column="2" Text="{Binding Precio}"></TextBlock>
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
         <TextBlock x:Name="tbbienvenida" HorizontalAlignment="Left" Margin="20,34,0,0" TextWrapping="Wrap" Text="Selecciona tus productos" VerticalAlignment="Top" Height="31" Width="424" FontFamily="Microsoft YaHei" FontSize="16"/>
-        <Button x:Name="btagregar" Content="Agregar" HorizontalAlignment="Left" Margin="295,196,0,0" VerticalAlignment="Top" Width="112" Height="36" FontFamily="Microsoft YaHei" FontSize="16" Cursor="Hand" BorderBrush="{x:Null}" Click="btagregar_Click">
+        <Button x:Name="btagregar" Content="Agregar" HorizontalAlignment="Left" Margin="295,196,0,0" VerticalAlignment="Top" Width="112" Height="36" FontFamily="Microsoft YaHei" FontSize="16" Cursor="Hand" BorderBrush="Black" Click="btagregar_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBCFBF8" Offset="0"/>
@@ -19,10 +37,10 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBox x:Name="tbproduct" HorizontalAlignment="Left" Height="29" Margin="281,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Background="{x:Null}" FontFamily="Microsoft YaHei" FontSize="16"/>
+        <TextBox x:Name="tbproduct" HorizontalAlignment="Left" Height="29" Margin="234,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Background="{x:Null}" FontFamily="Microsoft YaHei" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="281,143,0,0" TextWrapping="Wrap" Text="Unidades" VerticalAlignment="Top" Height="25" Width="80" FontFamily="Microsoft YaHei" FontSize="16"/>
         <TextBox x:Name="tbunidades" HorizontalAlignment="Left" Height="25" Margin="366,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Background="{x:Null}" FontFamily="Microsoft YaHei" FontSize="16"/>
-        <Button x:Name="bttotal" Content="Obtener Total" HorizontalAlignment="Left" Margin="295,297,0,0" VerticalAlignment="Top" Width="112" Height="36" FontFamily="Microsoft YaHei" FontSize="16" Cursor="Hand" BorderBrush="{x:Null}" Click="bttotal_Click">
+        <Button x:Name="bttotal" Content="Obtener Total" HorizontalAlignment="Left" Margin="295,297,0,0" VerticalAlignment="Top" Width="112" Height="36" FontFamily="Microsoft YaHei" FontSize="16" Cursor="Hand" BorderBrush="Black" Click="bttotal_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBCFBF8" Offset="0"/>
