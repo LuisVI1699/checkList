@@ -5,30 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:checkList"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="180">
+        Title="MainWindow" Height="425.59" Width="288.926">
     <Grid>
         <Canvas>
-            <Button x:Name="walmartButton" Canvas.Left="10" Canvas.Top="150" Width="140" Click="walmartButton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Walmart"/>
-                    <Image Source="walmartlog.png" Width="20" Height="20" />
-                </StackPanel>
+            <Button x:Name="walmartButton" Canvas.Left="56" Canvas.Top="135" Width="161" Click="walmartButton_Click" Height="45">
+                <Canvas >
+                    <TextBlock Text="Walmart" Canvas.Left="-62" Canvas.Top="-10" FontFamily="Raleway" FontSize="16"/>
+                    <Image Source="walmartlog.png" Width="54" Height="44" Canvas.Left="16" Canvas.Top="-21" />
+                </Canvas>
             </Button>
-            <Button x:Name="chedrauiButton" Canvas.Left="10" Canvas.Top="190" Width="140" Click="chedrauiButton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Chedraui"/>
-                    <Image Source="chedrauilog.png" Width="20" Height="20"/>
-                </StackPanel>
+            <Button x:Name="chedrauiButton" Canvas.Left="56" Canvas.Top="200" Width="161" Click="chedrauiButton_Click" Height="48">
+                <Canvas>
+                    <TextBlock Text="Chedraui" Canvas.Left="-66" Canvas.Top="-10" FontFamily="Raleway" FontSize="16"/>
+                    <Image Source="chedrauilog.png" Width="56" Height="46" Canvas.Left="12" Canvas.Top="-23"/>
+                </Canvas>
             </Button>
-            <Button x:Name="sorianaButton" Canvas.Left="10" Canvas.Top="230" Width="140"  Click="sorianaButton_Click">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Soriana"/>
-                    <Image Source="sorianalog.png" Width="20" Height="20"/>
-                </StackPanel>
+            <Button x:Name="sorianaButton" Canvas.Left="56" Canvas.Top="270" Width="161"  Click="sorianaButton_Click" Height="43">
+                <Canvas >
+                    <TextBlock Text="Soriana" Canvas.Left="-57" Canvas.Top="-9" FontFamily="Raleway" FontSize="16"/>
+                    <Image Source="sorianalog.png" Width="53" Height="42" Canvas.Left="18" Canvas.Top="-22"/>
+                </Canvas>
             </Button>
-            <Label Content="Nombre:" Canvas.Left="10" Canvas.Top="66"/>
-            <Label Content="CheckList" Canvas.Top="10" Canvas.Left="51"/>
-            <TextBox x:Name="nombreBox" Width="141" Canvas.Left="10" Canvas.Top="97"/>
+            <Label Content="Nombre:" Canvas.Left="30" Canvas.Top="74" FontFamily="Raleway" FontSize="16"/>
+            <Label Content="CheckList" Canvas.Top="10" Canvas.Left="95" FontFamily="Raleway" FontSize="16"/>
+            <TextBox x:Name="nombreBox" Width="141" Canvas.Left="110" Canvas.Top="74" Height="27"/>
         </Canvas>
 
     </Grid>

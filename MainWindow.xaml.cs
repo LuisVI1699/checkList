@@ -24,8 +24,13 @@ namespace checkList
         public MainWindow()
         {
             InitializeComponent();
-        }
 
+        }
+        public string nombre
+        {
+            set { value = nombreBox.Text; }
+            get { return (nombreBox.Text); }
+        }
         private void walmartButton_Click(object sender, RoutedEventArgs e)
         {
             vtn1 = new auxWindow();

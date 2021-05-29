@@ -21,3 +21,26 @@ C:\Users\Lenovo\Documents\Universidad\Programación\checkList\obj\Debug\auxWindo
 C:\Users\Lenovo\Documents\Universidad\Programación\checkList\obj\Debug\chedrauiPage.baml
 C:\Users\Lenovo\Documents\Universidad\Programación\checkList\obj\Debug\sorianaPage.baml
 C:\Users\Lenovo\Documents\Universidad\Programación\checkList\obj\Debug\walmartPagexaml.baml
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\bin\Debug\checkList.exe.config
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\bin\Debug\checkList.exe
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\bin\Debug\checkList.pdb
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.csprojAssemblyReference.cache
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\auxWindow.g.cs
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\chedrauiPage.g.cs
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\MainWindow.g.cs
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\sorianaPage.g.cs
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\walmartPagexaml.g.cs
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\App.g.cs
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList_MarkupCompile.cache
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList_MarkupCompile.lref
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\auxWindow.baml
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\chedrauiPage.baml
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\MainWindow.baml
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\sorianaPage.baml
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\walmartPagexaml.baml
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.g.resources
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.Properties.Resources.resources
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.csproj.GenerateResource.cache
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.csproj.CoreCompileInputs.cache
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.exe
+D:\OneDrive - Instituto Politecnico Nacional\Octavo Semestre\Calidad en la Ing\checkList\obj\Debug\checkList.pdb

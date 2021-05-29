@@ -20,11 +20,70 @@ namespace checkList
     /// </summary>
     public partial class sorianaPage : Page
     {
-        string[] Productos = { "Pan Bimbo", "Coca-Cola 3L", "Aceite", "Pañales", "Barra de jabón", "Pasta de Dientes", "Cereal", "Leche", "Docena de Huevos", "Jamón", "Mayonesa", "Catsup", "Mostaza", "Galletas" };
-        double[] precioSoriana = {27.87, 40.86, 38.34, 220.87, 15.12, 24.87, 45.54, 23.12, 24.91, 31.23, 39.96, 20.12, 36.78, 62.32 };
+        Carrito A = new Carrito();
+        ComboBox Box;
+        double precio, total;
+        String aux, aux1;
+        MainWindow B = new MainWindow();
         public sorianaPage()
         {
             InitializeComponent();
+            Generar();
+            tbbienvenida.Text = "Hola " + B.nombre + "selecciona tus productos";
+        }
+        
+       
+        public void Generar()
+        {
+            lblista.Items.Add("  Unidades                                  Producto                                      Total  ");
+            Box = new ComboBox();
+            for (int i = 0; i < 20; i++)
+            {
+                Box.Items.Add(A.Products[i]);
+            }
+            Box.Margin = new Thickness(73, 88, 0, 0);
+            Box.HorizontalAlignment = HorizontalAlignment.Left;
+            Box.VerticalAlignment = VerticalAlignment.Top;
+            Box.Width = 200;
+            Box.Height = 33;
+            Box.FontFamily = new FontFamily("Microsoft YaHei");
+            Box.FontSize = 16;
+            Box.Text = "Seleccionar";
+            Box.SelectionChanged += Checked;
+            grid1.Children.Add(Box);
+
+        }
+
+        private void bttotal_Click(object sender, RoutedEventArgs e)
+        {
+            lblista.Items.Add("El total de su lista es: " + total);
+        }
+
+        public void Checked(object sender, SelectionChangedEventArgs e)
+        {
+            tbproduct.Text = Box.SelectedItem.ToString();
+
+        }
+
+        private void btagregar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                aux1 = tbproduct.Text;
+
+                for (int i = 0; i < (50 - aux1.Length); i++)
+                {
+                    aux += " ";
+                }
+                precio = A.priceS[Convert.ToInt32(Box.SelectedIndex)];
+                lblista.Items.Add("        " + tbunidades.Text + "                                         " + tbproduct.Text + aux + precio * double.Parse(tbunidades.Text));
+                total += precio * double.Parse(tbunidades.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingresa una cantidad del producto");
+            }
+            aux = "";
         }
     }
 }
